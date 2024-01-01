@@ -1,26 +1,81 @@
-*{
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;
-text-decoration: none;
-list-style: none;
-input{
-padding: 10px;
-border: none;
-}
-button{
-cursor: pointer;
-background-color: white;
-border: 1px solid rgb(211, 211, 211);
-}
-img{
- width : 100%;
-height : 100%;
-}
-}
+ *{
+ margin: 0px;  padding: 0px;
+ box-sizing: border-box;user-select: none;
+ text-decoration: none; list-style: none;
+ overflow: hidden;
+ input{ padding: 10px; font-size: 17px; font-weight: bolder; }
+ button{ cursor: pointer;  background-color: white;  border: 1px solid red }
+ img{  width : 100%; height : 100%;  pointer-events: none; }}
 
 body{
-    width : 100%;height: 100vh;
-    border:5px solid red;
-    /* background-color: red; */
+    width : 100%;height: 100vh; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.main {
+
+    h1{
+        width : 100%;height: 15vh;
+        display : grid ; place-items : center ; 
+        background-color: black;
+        color: wheat;
+    }
+    div{
+        width : 100%;height: 85vh;
+        /* border:2px solid red; */ 
+        display : flex;
+        div{
+            width : 50%;height : 100%;
+            /* border:2px solid red; */
+            /* padding: 50px; */
+            
+        
+        }
+        div:first-child,div:last-child{   
+            display : flex;
+            flex-direction: column;
+            
+            
+            input{
+                width: 500px;height:50px
+                 
+              
+            } 
+            h2{
+                font-size: 17px;
+                margin-bottom: 5px;
+                
+            }
+            div{
+                width: 100%;height: 200px;
+                /* border:2px solid red; */
+            }
+            div:first-child{ 
+                padding: 20px; 
+                width : 100%;height: 20%; 
+                
+            }
+            div:last-child{
+                width : 100%;height: 70%;
+            }
+        } 
+        
+    }
+    hr{
+        width: 10px;
+        border:2px solid rgb(202, 202, 202);
+        transform: rotateY(120deg);
+        margin-bottom: 100px;
+        background-color: rgb(220, 220, 220);
+    }
+    p{
+        width : 40%;height: 50px;
+        border:2px solid rgb(0, 0, 0);
+        border-left: 10px solid blue;
+        border-radius: 5px;
+        position: absolute;
+        left: 25%;bottom: 7px;
+        padding: 5px; 
+    }
+}
+ 
