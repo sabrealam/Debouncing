@@ -13,17 +13,23 @@
             <div>
             <div><h2>Search For A Movies</h2>
                 <input type="text" id="moviename" oninput="debounce(makeAPI,1000)"> 
+                <div id="suggest"> </div>
             </div> 
             <div> <img src="./img1.svg" alt=""> </div> 
         </div>
-        <p>
-            <label for="" >You Have Made Total 3 Requests For This Searching   </label><br>
+        <p class="p1">
+            <label for=""  id="one"  >You Have Made Total 0 Requests For This Movie Search  </label><br>
+           
+        </p>
+        <p class="p2">
+            <label for=""  id="two" >You Have Made Total 0 Requests For This Meal Search   </label><br>
            
         </p>
             <hr>
             <div> 
                 <div><h2>Search For A Meals</h2>
                     <input type="text" id="mealname" oninput="debounce1(makeAPI1,1000)"> 
+                    <div  id="suggest1"></div>
                 </div> 
                 <div> <img src="./img2.svg" alt=""> </div>
 

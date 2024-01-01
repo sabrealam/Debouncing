@@ -5,13 +5,16 @@
  overflow: hidden;
  input{ padding: 10px; font-size: 17px; font-weight: bolder; }
  button{ cursor: pointer;  background-color: white;  border: 1px solid red }
- img{  width : 100%; height : 100%;  pointer-events: none; }}
+ img{  width : 100%; height : 100%;  pointer-events: none; }
+div{cursor: pointer;}}
 
 body{
     width : 100%;height: 100vh; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+input{
+    position: relative;
+}
 .main {
 
     h1{
@@ -74,8 +77,59 @@ body{
         border-left: 10px solid blue;
         border-radius: 5px;
         position: absolute;
-        left: 25%;bottom: 7px;
+        left: 6.25%;bottom: 7px;
         padding: 5px; 
     }
+    p+p{
+        width : 40%;height: 50px;
+        border:2px solid rgb(0, 0, 0);
+        border-left: 10px solid blue;
+        border-radius: 5px;
+        position: absolute;
+        left: 55%;bottom: 7px;
+        padding: 5px; 
+
+    }
+}
+
+#suggest{
+    position: absolute;
+    width: 500px;height: auto;
+    border:2px solid rgb(219, 219, 219);
+    top: 200px;
+    display: none;
+    padding: 15px;
+    max-height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: white;
+    a{
+        padding: 10px;
+    }
+}
+#suggest:hover{
+    display: block;
+}
+#suggest1{
+    position: absolute;
+    width: 500px;height: auto; 
+    max-height: 200px;
+    border:2px solid rgb(218, 218, 218);
+    top: 200px;
+    display: none;
+    padding: 15px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: white;
+    a{
+        padding: 10px;
+    }
+}
+
+#suggest1:hover{
+    display: block;
+}
+#suggest1::-webkit-scrollbar{
+    display: none;
 }
  
