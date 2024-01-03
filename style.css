@@ -27,7 +27,7 @@ h1{
     display : flex;
 }
 #fir>div{
-    border:2px solid red;
+    border-right:5px solid rgb(0, 0, 0);
     width : 50%;height : 100%;
     padding: 20px;
 }
@@ -44,6 +44,7 @@ h1{
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
     overflow: scroll;
+    background-color: rgb(236, 236, 236);
 }
 #render > div {
     padding: 5px;height: 200px;
