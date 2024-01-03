@@ -2,6 +2,9 @@ let movienames = document.querySelector('#moviename');
 let suggest = document.querySelector('#suggest');
 let suggest1 = document.querySelector('#suggest1');
 let data = [];
+window.addEventListener('load', function(){
+    alert('Search For A Movies And Meals \nClick On The Suggestion To Get Redirect To The Details Page')
+})
 async function makeAPI(){ 
     try {
         let res =await fetch(`https://www.omdbapi.com/?t=${movienames.value}&apikey=92a49ce9`);
